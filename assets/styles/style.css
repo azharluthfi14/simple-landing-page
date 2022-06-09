@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+
+:root {
+  --black-color: #222831;
+  --slate-color: #30475e;
+  --red-color: #00880d;
+  --gray-color: #64748b;
+  --white-color: #ffffff;
+  --font-medium: 500;
+  --font-semibold: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.section__title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.section__title span {
+  color: var(--red-color);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 35px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.button__primary {
+  background: #00880d;
+}
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.navbar {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  color: #22c55e;
+  font-size: 1.5rem;
+  font-weight: var(--font-semibold);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    z-index: 999;
+  }
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__item {
+  margin-left: 2.5rem;
+}
+
+.navbar__link {
+  color: #222831;
+  font-weight: var(--font-medium);
+}
+
+.navbar__link:hover {
+  color: var(--red-color);
+}
+
+/* === Home === */
+.home__section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__desc {
+  width: 50%;
+}
+
+.home__title {
+  font-size: 3.5rem;
+  color: #222831;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.home__title span {
+  color: #00880d;
+}
+
+.home__text {
+  font-size: 1rem;
+  color: var(--gray-color);
+  margin-bottom: 35px;
+  line-height: 1.625;
+}
+
+.home__image {
+  width: 400px;
+  justify-self: center;
+}
+
+/* === About === */
+.cards__layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 15px;
+  width: 360px;
+  height: 180px;
+  margin: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon__box {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #00880d;
+  border-radius: 100%;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.card__title {
+  font-size: 1rem;
+  color: #00880d;
+  font-weight: 700;
+}
+
+.card__text {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* === Bahan === */
+.bahan__section {
+  background: #101820;
+  border-radius: 85px 85px 0 0;
+}
+
+.section__title-bahan {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.section__title-bahan span {
+  color: #00880d;
+}
+
+.card__bahan {
+  padding: 50px;
+  border-radius: 50px;
+}
+
+.bahan__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.list__bahan {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.list__item {
+  margin: 15px;
+  font-size: 1.2rem;
+}
+
+/* === Proses === */
+
+.proses__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proses__image {
+  width: 500px;
+  height: 500px;
+}
+
+.proses__data {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    line-height: 1.625;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
