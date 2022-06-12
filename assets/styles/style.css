@@ -84,6 +84,10 @@ p {
   background: #00880d;
 }
 
+.button__primary:hover {
+  background: #079c16;
+}
+
 .header {
   width: 100%;
   position: sticky;
@@ -209,7 +213,7 @@ p {
   background-color: #00880d;
   border-radius: 100%;
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .card__title {
@@ -242,7 +246,6 @@ p {
 
 .card__bahan {
   padding: 50px;
-  border-radius: 50px;
 }
 
 .bahan__wrapper {
@@ -268,13 +271,69 @@ p {
   justify-content: space-between;
 }
 
+.proses__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .proses__image {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
 }
 
 .proses__data {
   width: 100%;
+}
+
+.list__proses {
+  margin: 20px;
+}
+
+.list__proses-item {
+  margin-bottom: 20px;
+}
+
+/* === Author === */
+.author__section {
+  display: flex;
+  justify-content: center;
+}
+
+.card__author {
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 50px;
+  width: 50%;
+  display: flex;
+  border: 1px solid #dddddd;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+}
+
+.avatar__images-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar__images {
+  width: 155px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+/* === Footer === */
+footer {
+  height: 100px;
+  background-color: #101820;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
