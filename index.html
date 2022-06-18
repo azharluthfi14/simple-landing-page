@@ -6,54 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <title>Foody</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Homepage</title>
 </head>
 
 <body>
-
     <!-- Header -->
-    <header class="header">
-        <nav class="navbar container">
+    <header id="header" class="header">
+        <nav class="navbar container" id="navbar">
             <a href="#" class="navbar__logo">
                 <span class="material-icons">
                     restaurant
                 </span>
-                Foody</a>
-            <div class="navbar__menu">
+                Foody
+            </a>
+            <div class="navbar__menu" id="navbar-menu">
                 <ul class="navbar__list">
+                    <div class="close__button">
+                        <span id="navbar-close" class="material-icons navbar__close">
+                            close
+                        </span>
+                    </div>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__link">Home</a>
+                        <a href="#hero" class="navbar__link active__link">Home</a>
+                    </li>
+                    <li class="navbar__item link__dark">
+                        <a href="#manfaat" class="navbar__link">Manfaat</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__link">Manfaat</a>
+                        <a href="#bahan" class="navbar__link">Bahan</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__link">Bahan</a>
+                        <a href="#tutorial" class="navbar__link">Tutorial</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__link">Tutorial</a>
+                        <a href="#author" class="navbar__link">Creator</a>
                     </li>
                 </ul>
+            </div>
+            <div class="navbar__open" id="navbar-open">
+                <span class="material-icons">
+                    menu
+                </span>
             </div>
         </nav>
     </header>
 
-    <!-- Main section -->
+    <!-- Main -->
     <main>
-        <section class="home__section container">
-            <div class="home__desc">
-                <h2 class="home__title">Makanan Sehat untuk Kesehatan Salad <span>Hijau</span></h2>
-                <p class="home__text">Miliki bentuk tubuh ideal dengan menjaga asupan makanan sehari-hari dari makanan
-                    tidak sehat seperti junk food</p>
-                <button class="button button__primary">Let's Go</button>
+        <section class="hero__section" id="hero">
+            <div class="container hero__wrapper">
+                <article class="hero__data">
+                    <h1 class="hero__data-title">Menu Makanan Sehat <span>Salad Hijau</span></h2>
+                        <p class="hero__data-text">Miliki bentuk tubuh ideal dengan menjaga asupan makanan sehari-hari
+                            dari
+                            makanan
+                            tidak sehat seperti junk food</p>
+                        <button class="button button__primary">Let's Go</button>
+                </article>
+                <img class="hero__image" src="assets/images/home.png" alt="home-image">
             </div>
-            <img class="home__image" src="assets/images/home.png" alt="home-image">
         </section>
 
-        <section class="section container">
+        <section class="manfaat__section container" id="manfaat">
             <h1 class="section__title">Manfaat <span>Salad</span></h1>
-            <div class="cards__layout">
+            <div class="cards">
                 <article class="card">
                     <div class="card__header">
                         <span class="material-icons icon__box">
@@ -71,7 +88,8 @@
                         </span>
                         <h1 class="card__title">Menurunkan Berat Badan</h1>
                     </div>
-                    <p class="card__text">Salad merupakan makanan rendah kalori dan lemak</p>
+                    <p class="card__text">Salad merupakan makanan rendah kalori dan lemak. Sehingga sangat cocok untuk
+                        program diet</p>
                 </article>
                 <article class="card">
                     <div class="card__header">
@@ -116,10 +134,15 @@
             </div>
         </section>
 
-        <section class="section bahan__section">
-            <div class="container card__bahan">
-                <h1 class="section__title-bahan">Bahan - Bahan <span>Pembuatan</span></h1>
-                <figure class="bahan__wrapper">
+        <section class="bahan__section" id="bahan">
+            <figure class="bahan__image-wrapper">
+                <div class="container">
+                    <img class="bahan__image" src="assets/images/bahan.png" alt="">
+                </div>
+            </figure>
+            <article class="bahan__wrapper">
+                <div class="bahan__content">
+                    <h1 class="section__title-bahan">Bahan - Bahan <span>Pembuatan</span></h1>
                     <ul class="list__bahan">
                         <li class="list__item">Daun selada (cuci bersih, iris atau sobek kasar)</li>
                         <li class="list__item">Siapkan 6-8 buah tomat kecil</li>
@@ -129,51 +152,62 @@
                         </li>
                         <li class="list__item">Dressing salad kwepie campur dengan perasan lemon</li>
                     </ul>
-                    <div>
-                        <img src="assets/images/bahan.png" alt="">
-                    </div>
-                </figure>
-            </div>
+                </div>
+            </article>
         </section>
 
-        <section class="section container">
-            <div class="proses__wrapper">
-                <figure class="proses__image-wrapper">
-                    <img class="proses__image" src="assets/images/home.png" alt="">
-                </figure>
+        <section class="tutorial__section" id="tutorial">
+            <div class="container">
+                <h1 class="section__title">Tutorial <span>Pembuatan</span></h1>
                 <article class="proses__data">
-                    <h1 class="section__title">Tutorial <span>Pembuatan</span></h1>
-                    <ul class="list__proses">
-                        <li class="list__proses-item">Masukkan daun selada sesuai selera kedalam wadah yang sudah
+                    <ol class="list__proses">
+                        <li class="proses__item">Masukkan daun selada sesuai selera kedalam wadah yang sudah
                             disiapkan</li>
-                        <li class="list__proses-item">Jangan lupa untuk masukan juga irisan timun, tomat</li>
-                        <li class="list__proses-item">Tambahkan minyal zaitun secukupnya dan perasan air lemon</li>
-                        <li class="list__proses-item">Guyur dengan dressing salad, aduk semua bahan hingga tercampur
+                        <li class="proses__item">Jangan lupa untuk masukan juga irisan timun, tomat</li>
+                        <li class="proses__item">Tambahkan minyak zaitun secukupnya dan perasan air lemon</li>
+                        <li class="proses__item">Guyur dengan dressing salad, aduk semua bahan hingga tercampur
                             rata</li>
-                    </ul>
+                        <li class="proses__item">Salad siap dihidangkan</li>
+                    </ol>
                 </article>
             </div>
+            <figure class="tutorial__image-wrapper">
+                <div class="container">
+                    <img class="tutorial__image" src="assets/images/home.png" alt="">
+                </div>
+            </figure>
         </section>
 
-        <section class="section author__section">
-            <aside class="card__author">
-                <figure class="avatar__images-wrapper">
-                    <img class="avatar__images" src="assets/images/avatar.jpg" alt="">
-                </figure>
-                <article>
-                    <h1>Author by</h1>
-                    <h2>Muhammad Azhar Luthfi</h2>
-                    <p>Don't give up, you can do it.</p>
-                </article>
+        <section class="author__section" id="author">
+            <aside class="container">
+                <h1 class="section__title-author">Created <span>By</span></h1>
+                <div class="card__wrapper">
+                    <figure class="card__author">
+                        <img class="author__image" src="assets/images/avatar.jpg" alt="">
+                        <figcaption class="author__data">
+                            <h1 class="author__heading">Muhammad Azhar Luthfi</h1>
+                            <blockquote class="author__quote">
+                                “ Life has no Ctrl + Z “
+                            </blockquote>
+                        </figcaption>
+                    </figure>
+                </div>
             </aside>
         </section>
     </main>
 
-    <footer>
-        <p>Design and Built with ❤️ by Azhar Luthfi</p>
-        <p id="dateYear"></p>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <p class="footer__date">Copyright ©<span id="dateYear"></span>. All Rights Reserved.</p>
+            <p class="footer__author">Designed and built with ❤️ by Azhar Luthfi</p>
+            <a href="#" class="footer__logo">
+                <span class="material-icons">
+                    restaurant
+                </span>
+                Foody
+            </a>
+        </div>
     </footer>
-
 </body>
 <script src="assets/js/scripts.js"></script>
 
