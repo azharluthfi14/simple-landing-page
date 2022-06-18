@@ -20,9 +20,9 @@ if (navbarClose) {
 const headerId = document.getElementById("header");
 window.onscroll = () => {
   if (window.scrollY > 50) {
-    headerId.classList.add("navbar__shrink");
+    headerId.classList.add("header__shrink");
   } else {
-    headerId.classList.remove("navbar__shrink");
+    headerId.classList.remove("header__shrink");
   }
 };
 

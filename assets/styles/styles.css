@@ -169,6 +169,10 @@ ol {
 .hidden {
   display: none;
 }
+.header__shrink {
+  height: 4.3rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
 
 /* === Navbar === */
 .navbar {
@@ -176,11 +180,6 @@ ol {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
-
-.navbar__shrink {
-  height: 4.3rem;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .navbar__logo {
